@@ -152,7 +152,7 @@
 
       <section class="contacts"> <!-- не знаю, как нас будут дольшу учить вставлять карту, пока вставлю img -->
               <h2 class="visually-hidden">Как к нам попасть. Адрес студии Нёрдс</h2>
-              <img src="#" width="x" height="" alt="Карта Санкт-Петербурга">
+              <img src="http://placehold.it/150x100" width="x" height="" alt="Карта Санкт-Петербурга">
               <div class="address">
                   <p>191186б Санкт-Петербург,<br>ул. Б. Конюшенная, д.19/8<br>тел. +7 (812) 275-75-75</p>
                   <a class="write-us-button">Напишите нам</a>
@@ -167,13 +167,13 @@
           <ul>
               <li>
                 <a href="#" class="social-button">
-                  <img src="#" width="x" height="x" alt="Нёрдс Вконтакте">
+                  <img src="http://placehold.it/150x100" width="x" height="x" alt="Нёрдс Вконтакте">
                 </a></li>
                 <li><a href="#" class="social-button">
-                  <img src="#" width="x" height="x" alt="Нёрдс на Фейсбуке">
+                  <img src="http://placehold.it/150x100" width="x" height="x" alt="Нёрдс на Фейсбуке">
                 </a></li>
                   <li><a href="#" class="social-button">
-                    <img src="#" width="x" height="x" alt="Нёрдс в инстаграме">
+                    <img src="http://placehold.it/150x100" width="x" height="x" alt="Нёрдс в инстаграме">
                   </a></li>
           </ul>
       </section>
