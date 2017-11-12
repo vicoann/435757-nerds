@@ -15,13 +15,13 @@
         </a>
 
         <ul class="site-navigation" aria-label="Главное меню" tabindex="0">
-          <li class="site-nav-item"><a href="#" aria-label="Перейти к описанию нашей студии">Студия</a></li>
-          <li class="site-nav-item"><a href="#" aria-label="Перейти к нашим клиентам">Клиенты</a></li>
-          <li class="site-nav-item"><a href="nerds-catalog.html" aria-label="Перейти в онлайн-магазин">Магазин</a></li>
-          <li class="site-nav-item"><a href="#" aria-label="Как с нами связаться">Контакты</a></li>
+          <li class="site-nav-item"><a href="#">Студия</a></li>
+          <li class="site-nav-item"><a href="#">Клиенты</a></li>
+          <li class="site-nav-item"><a href="nerds-catalog.html">Магазин</a></li>
+          <li class="site-nav-item"><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation" aria-label="Здесь находится ваша корзина покупок" tabindex="0">
-          <li><a class="cart" href="#" aria-label="Корзина">Корзина</a></li>
+          <li><a class="cart" href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -32,42 +32,64 @@
     <section class="filtres" tabindex="0" aria-label="Выберите критерии шаблона">
 
       <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form method="get" class="filter" action="https://echo.htmlacademy.ru" >
+          <fieldset>
+            <legend>Стоимость</legend>
+            <label for="cost">Стоимость</label>
+            <input id="cost" type="range" min="0" max="15000">
+            <span>от</span>
+            <span>до</span>
+          </fieldset>
 
-        <label for="cost">Стоимость</label>
-        <input id="cost" type="range" min="0" max="15000">
-        <span>от</span>
-        <span>до</span>
+          <fieldset>
+            <legend aria-label="Выберите сетку шаблона">Сетка</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden" id="adaptive" type="radio" name="layout" value="adaptive">
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="fixed" type="radio" name="layout" value="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="rubber" type="radio" name="layout" value="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
 
+          <fieldset>
+            <legend aria-label="Выберите особенности шаблона">Особенности</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden" id="slider" type="checkbox" name="slider">
+                <label for="slider">Слайдер</label>
+              </li>
 
-        <h4 tabindex="0" aria-label="Выберите сетку шаблона">Сетка</h4>
+              <li>
+                <input class="visually-hidden" id="features" type="checkbox" name="features">
+                <label for="features">Блок преимуществ</label>
+              </li>
 
-        <label for="adaptive">Адаптивная</label><!-- вопрос-->
-        <input id="adaptive" type="radio" name="layout" value="adaptive">
+              <li>
+                <input class="visually-hidden" id="news" type="checkbox" name="news">
+                <label for="news">Новости</label>
+              </li>
 
-        <label for="fixed">Фиксированная</label>
-        <input id="fixed" type="radio" name="layout" value="fixed">
+              <li>
+                <input class="visually-hidden" id="gallery" type="checkbox" name="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
 
-        <label for="rubber">Резиновая</label>
-        <input id="rubber" type="radio" name="layout" value="rubber">
-
-        <h4 tabindex="0" aria-label="Выберите особенности шаблона">Особенности</h4>
-
-        <label for="slider">Слайдер</label>
-        <input id="slider" type="checkbox" name="slider">
-
-        <label for="features">Блок преимуществ</label>
-        <input id="features" type="checkbox" name="features">
-
-        <label for="news">Новости</label>
-        <input id="news" type="checkbox" name="news">
-
-        <label for="gallery">Галерея</label>
-        <input id="gallery" type="checkbox" name="gallery">
-
-        <label for="cart">Корзина</label>
-        <input id="cart" type="checkbox" name="cart">
-
-        <button type="button" aria-label="Показать подходящие шаблоны" tabindex="0">Показать</button>
+              <li>
+                <input class="visually-hidden" id="cart" type="checkbox" name="cart">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <button class="filtres-show" type="button" aria-label="Показать подходящие шаблоны" tabindex="0">Показать</button>
     </section>
 
     <section class="filtres-apply" tabindex="0" aria-label="Выберите интересующий вас шаблон">
@@ -89,7 +111,7 @@
             <div class="item-description">
               <h3><a href="sedona-item.html" aria-label="Перейти к демонстрации шаблона Седона">Sedona</a></h3>
               <span>Информационный сайт для туристов</span>
-              <button class="button" aria-label="Купить шаблон Седона">9 900 РУБ.</button>
+              <a href="#" aria-label="Купить шаблон Седона">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -99,7 +121,7 @@
             <div class="item-description">
               <h3><a href="pink-item.html" aria-label="Перейти к демонстрации шаблона Пинк">Pink App</a></h3>
               <span>Продуктовый лендинг приложения для iOS и Android</span>
-              <button class="button" aria-label="купить шаблон Пинк">9 900 РУБ.</button>
+              <a href="#" aria-label="купить шаблон Пинк">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -109,7 +131,7 @@
             <div class="item-description">
               <h3><a href="borodinski-item.html" aria-label="Перейти к демонстрации шаблона Бородинский">Бородинский</a></h3>
               <span>Сайт салона красоты. Для мужчин, да.</span>
-              <button class="button" aria-label="Купить шаблон Бородинский">9 900 РУБ.</button>
+                <a href="#" aria-label="Купить шаблон Бородинский">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -119,7 +141,7 @@
             <div class="item-description">
               <h3><a href="mishka-item.html" aria-label="Перейти к демонстрации шаблона Мишка">Mishka</a></h3>
               <span>Интернет-магазин вязанных игрушек</span>
-              <button class="button" aria-label="Купить шаблон Мишка">9 900 РУБ.</button>
+                <a href="#" aria-label="Купить шаблон Мишка">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -129,7 +151,7 @@
             <div class="item-description">
               <h3><a href="aplus-item.html" aria-label="Перейти к демонстрации шаблона А Плюс">A Plus</a></h3>
               <span>Лендинг курсов повышения квалификации</span>
-              <button class="button" aria-label="Купить шаблон А Плюс">9 900 РУБ.</button>
+                <a href="#" aria-label="Купить шаблон А Плюс">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -139,7 +161,7 @@
             <div class="item-description">
               <h3><a href="kvast-item.html" aria-label="Перейти к демонстрации шаблона Кваст ">Кваст</a></h3>
               <span>Промо-сайт производителя крафтового кваса</span>
-              <button class="button" aria-label="Купить шаблон Кваст">9 900 РУБ.</button>
+                <a href="#" aria-label="Купить шаблон Кваст">9 900 РУБ.</a>
             </div>
           </li>
         </ul>
@@ -155,7 +177,7 @@
     <section class="contacts" tabindex="0" aria-label="Адрес и контакты студии Нёрдс">
       <h2 class="visually-hidden">Как к нам попасть. Адрес студии Нёрдс</h2>
       <img src="img/nerds-map.jpg" width="1440" height="416" alt="Студия Нёрдс находится по адресу ул. Большая Конюшенная, д.19/8, телефон +7 (812) 275-75-75">
-      <div class="address" tabindex="0" aria-label="Студия Нёрдс находится по адресу ул. Большая Конюшенная, д.19/8, телефон +7 (812) 275-75-75">
+      <div class="address">
         <p>191186б Санкт-Петербург,<br>ул. Б. Конюшенная, д.19/8<br>тел. +7 (812) 275-75-75</p>
         <a class="write-us-button" tabindex="0" aria-label="Перейти к форме отправки сообщения">Напишите нам</a>
       </div>
@@ -172,10 +194,10 @@
           <input type="email" class="mail" id="your-mail" placeholder="Для отправки ответа">
           <label for="your-message">Текст письма:</label>
           <input type="text" class="message" id="your-message" placeholder="В свободной форме">
-          <button type="button" aria-label="Отправить сообщение">Отправить</button>
+          <button class="write-us-form-send" type="submit" aria-label="Отправить сообщение">Отправить</button>
         </fieldset>
       </form>
-      <button type="button"><span class="visually-hidden">Закрыть форму отправки сообщения</span></button>
+      <button class="write-us-form-close" type="button"><span class="visually-hidden">Закрыть форму отправки сообщения</span></button>
     </div>
 
   </main>
@@ -185,20 +207,20 @@
       <h2 class="visually-hidden">Нёрдс в социальных сетях</h2>
       <ul>
         <li>
-          <a href="#" class="social-button" aria-label="Перейти на страницу Нёрдс Вконтакте">
-          <img src="img/svg-nerds/vk-icon.svg" width="26" height="15" alt="Нёрдс Вконтакте">
+          <a href="#" class="social-button">
+          <img src="img/svg-nerds/vk-icon.svg" width="26" height="15" alt="Перейти на страницу Нёрдс Вконтакте">
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-button" aria-label="Перейти на страницу Нёрдс на Фейсбуке">
-          <img src="img/svg-nerds/fb-icon.svg" width="12" height="22" alt="Нёрдс на Фейсбуке">
+          <a href="#" class="social-button">
+          <img src="img/svg-nerds/fb-icon.svg" width="12" height="22" alt="Перейти на страницу Нёрдс на Фейсбуке">
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-button" aria-label="Перейти на страницу Нёрдс в инстаграме">
-          <img src="img/svg-nerds/insta-icon.svg" width="21" height="21" alt="Нёрдс в инстаграме">
+          <a href="#" class="social-button">
+          <img src="img/svg-nerds/insta-icon.svg" width="21" height="21" alt="Перейти на страницу Нёрдс в инстаграме">
           </a>
         </li>
       </ul>
