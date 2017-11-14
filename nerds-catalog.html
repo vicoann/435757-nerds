@@ -10,17 +10,17 @@
     <header class="main-header">
       <nav class="main-navigation">
 
-        <a class="logo" href="index.html" title="Вернуться на главную страницу">
+        <a class="logo" href="index.html" title="Главная страница сайта">
         <img src="img/svg-nerds/nerds-logo.svg" width="x" height="x" alt="Логотип студии Нёрдс">
         </a>
 
-        <ul class="site-navigation" aria-label="Главное меню">
-          <li class="site-nav-item"><a href="#">Студия</a></li>
-          <li class="site-nav-item"><a href="#">Клиенты</a></li>
-          <li class="site-nav-item"><a href="nerds-catalog.html">Магазин</a></li>
-          <li class="site-nav-item"><a href="#">Контакты</a></li>
+        <ul class="site-navigation" role="menubar">
+          <li class="site-nav-item" role="menuitem"><a href="#">Студия</a></li>
+          <li class="site-nav-item" role="menuitem"><a href="#">Клиенты</a></li>
+          <li class="site-nav-item" role="menuitem"><a href="nerds-catalog.html">Магазин</a></li>
+          <li class="site-nav-item" role="menuitem"><a href="#">Контакты</a></li>
         </ul>
-        <ul class="user-navigation" aria-label="Здесь находится ваша корзина покупок">
+        <ul class="user-navigation">
           <li><a class="cart" href="#">Корзина</a></li>
         </ul>
       </nav>
@@ -42,7 +42,7 @@
           </fieldset>
 
           <fieldset>
-            <legend aria-label="Выберите сетку шаблона">Сетка</legend>
+            <legend title="Выберите сетку шаблона">Сетка</legend>
             <ul>
               <li>
                 <input class="visually-hidden" id="adaptive" type="radio" name="layout" value="adaptive">
@@ -116,7 +116,7 @@
             <div class="item-description">
               <h3><a href="sedona-item.html" title="Перейти к демонстрации шаблона Седона">Sedona</a></h3>
               <span>Информационный сайт для туристов</span>
-              <a href="#" title="Купить шаблон Седона">9 900 РУБ.</a>
+              <a href="#" title="добавить шаблон Седона в корзину">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -126,7 +126,7 @@
             <div class="item-description">
               <h3><a href="pink-item.html" title="Перейти к демонстрации шаблона Пинк">Pink App</a></h3>
               <span>Продуктовый лендинг приложения для iOS и Android</span>
-              <a href="#" title="купить шаблон Пинк">9 900 РУБ.</a>
+              <a href="#" title="добавить шаблон Пинк в корзину">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -136,7 +136,7 @@
             <div class="item-description">
               <h3><a href="borodinski-item.html" title="Перейти к демонстрации шаблона Бородинский">Бородинский</a></h3>
               <span>Сайт салона красоты. Для мужчин, да.</span>
-              <a href="#" title="Купить шаблон Бородинский">9 900 РУБ.</a>
+              <a href="#" title="добавить шаблон Бородинский в корзину">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -144,9 +144,9 @@
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта магазина вязанных игрушек Мишка Мишка">
             <span class="item-header"></span>
             <div class="item-description">
-              <h3><a href="mishka-item.html" title="Перейти к демонстрации шаблона Мишка">Mishka</a></h3>
+              <h3><a href="mishka-item.html" title="демонстрация шаблона Мишка">Mishka</a></h3>
               <span>Интернет-магазин вязанных игрушек</span>
-              <a href="#" title="Купить шаблон Мишка">9 900 РУБ.</a>
+              <a href="#" title="добавить шаблон Мишка в корзину">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -154,9 +154,9 @@
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта курсов повышения квалификации А Плюс">
             <span class="item-header"></span>
             <div class="item-description">
-              <h3><a href="aplus-item.html" title="Перейти к демонстрации шаблона А Плюс">A Plus</a></h3>
+              <h3><a href="aplus-item.html" title="демонстрация шаблона А Плюс">A Plus</a></h3>
               <span>Лендинг курсов повышения квалификации</span>
-              <a href="#" title="Купить шаблон А Плюс">9 900 РУБ.</a>
+              <a href="#" title="добавить шаблон А Плюс в корзину">9 900 РУБ.</a>
             </div>
           </li>
 
@@ -164,18 +164,18 @@
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта магазина производителя крафтового кваса Кваст">
             <span class="item-header"></span>
             <div class="item-description">
-              <h3><a href="kvast-item.html" title="Перейти к демонстрации шаблона Кваст ">Кваст</a></h3>
+              <h3><a href="kvast-item.html" title="демонстрация шаблона Кваст">Кваст</a></h3>
               <span>Промо-сайт производителя крафтового кваса</span>
-              <a href="#" title="Купить шаблон Кваст">9 900 РУБ.</a>
+              <a href="#" title="добавить шаблон Кваст в корзину">9 900 РУБ.</a>
             </div>
           </li>
         </ul>
 
         <ul class="pagination-list" aria-label="перемещение по страницам каталога">
-          <li><a class="active" href="#" title="остаться на текущей странице">1</a></li>
-          <li><a href="#" title="Перейти к странице 2">2</a></li>
-          <li><a href="#" title="Перейти к странице 3">3</a></li>
-          <li><a href="#" title="Перейти к 4 и последующим страницам">Следующая</a></li>
+          <li><a class="active" href="#" title="текущая страница">1</a></li>
+          <li><a href="#" title="страница 2">2</a></li>
+          <li><a href="#" title="страница 3">3</a></li>
+          <li><a href="#" title="4 и последующие страницы">Следующая</a></li>
         </ul>
     </section>
 
@@ -184,7 +184,7 @@
       <img src="img/nerds-map.jpg" width="1440" height="416" alt="Студия Нёрдс находится по адресу ул. Большая Конюшенная, д.19/8, телефон +7 (812) 275-75-75">
       <div class="address">
         <p>191186б Санкт-Петербург,<br>ул. Б. Конюшенная, д.19/8<br>тел. +7 (812) 275-75-75</p>
-        <a class="write-us-button" title="Перейти к форме отправки сообщения">Напишите нам</a>
+        <button class="write-us-button" type="button">Напишите нам</button>
       </div>
     </section>
 
@@ -221,19 +221,19 @@
     <h2 class="visually-hidden">Нёрдс в социальных сетях</h2>
       <ul>
         <li>
-          <a href="#" class="social-button" title="Перейти на страницу Нёрдс Вконтакте">
+          <a href="#" class="social-button" title="сайт Нёрдс Вконтакте">
           <img src="img/svg-nerds/vk-icon.svg" width="26" height="15" alt="Нёрдс Вконтакте">
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-button" title="Перейти на страницу Нёрдс на Фейсбуке">
+          <a href="#" class="social-button" title="сайт Нёрдс на Фейсбуке">
           <img src="img/svg-nerds/fb-icon.svg" width="12" height="22" alt="Нёрдс на Фейсбуке">
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-button" title="Перейти на страницу Нёрдс в инстаграме">
+          <a href="#" class="social-button" title="сайт Нёрдс в инстаграме">
           <img src="img/svg-nerds/insta-icon.svg" width="21" height="21" alt="Нёрдс в инстаграме">
           </a>
         </li>
