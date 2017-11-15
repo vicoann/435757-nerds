@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283136;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-header,
+.item-description {
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation,
+.slider,
+.items,
+.our-partners,
+.footer-social ul,
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+
+.slide h3 {
+  font-size: 55px;
+  color: #000000;
+  line-height: 55px;
+  /*background-color: #eeeeee;* povtoryaetsya kak i v .main-header*/
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.slide .button,
+.items .button,
+.contacts .button,
+.write-us-form .button {
+  background-color: #fb565a;
+}
+
+.item-2 .button {
+  background-color: #00ca74;
+}
+
+.item-3 .button {
+  background-color: #efc84a;
+}
+
+.items h2 {
+  font-size: 24px;
+  font-style: bold;
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.feature-item h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.feature-item h4,
+.feature-table h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+tr:nth-child(1) td {
+  font-size: 45px;
+  line-height: 10,06px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts h2 {
+  font-weight: bold;
+}
+
+.address h4,
+.filtres legend,
+.filtres-apply h4{
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+
+
+  text-transform: uppercase;
+}
+
+.address h4,
+.filtres legend
+{
+  line-height: 30px;
+}
+
+.address p {
+  line-height: 18px;
+}
+
+.social-discount h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* catalog */
+
+.container h1 {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.filtres-show {
+  color: #000000;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.filtres-apply h4{
+  line-height: 18px;
+}
+
+.filtres-apply a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.item-description {
+  text-align: center;
+}
+
+.item-description h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.item-description a {
+  color: #000000;
+}
+
+.item-description .button {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.item-description span {
+  display: block; /*4toby <a> ne prilipal*/
+  line-height: 18px;
+  color: #666666;
+}
+
+.pagination-list a {
+  color: #000000;
+}
+
+/*forma soobsheniya*/
+
+.write-us-form label {
+  line-height: 18px;
+  font-weight: bold;
+  color: 000000;
+}
+
+.write-us-form h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="mail"] {
+  font: inherit;
+  color: #444444;
+}
