@@ -13,10 +13,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 img {
   max-width: 100%;
 }
@@ -25,6 +21,18 @@ img {
 .item-description {
   background-color: #eeeeee;
 }
+
+/*?ne rabotaet?*/
+
+a.logo:hover{
+  opacity: 0.8;
+}
+
+a.logo:active{
+  opacity: 0.3;
+}
+
+/*?ne rabotaet?*/
 
 .site-navigation,
 .user-navigation,
@@ -39,13 +47,30 @@ img {
 
 .site-navigation a,
 .user-navigation a {
-
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-
 }
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  text-decoration: none;
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* aktivny, nahodimsya na stranitse */
+.current-page{
+  border-bottom: 1px solid #fb565a;
+}
+/* ? ne znau pravilno li sdelala? */
 
 .slide h3 {
   font-size: 55px;
@@ -63,19 +88,48 @@ img {
 }
 
 .slide .button,
-.items .button,
+.item-1 .button,
 .contacts .button,
 .write-us-form .button {
   background-color: #fb565a;
 }
 
+.slide a:hover,
+.item-1 a:hover {
+  background-color: #e74246;
+}
+
+.slide a:active,
+.item-1 a:active {
+  background-color: #e74246;
+  color: rgba(255, 255, 255, 0.3);
+}/*efekt vzhatiya!*/
+
 .item-2 .button {
   background-color: #00ca74;
 }
 
+.item-2 a:hover {
+  background-color: #00bc6c;
+}
+
+.item-2 a:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}/*efekt vzhatiya!*/
+
 .item-3 .button {
   background-color: #efc84a;
 }
+
+.item-3 a:hover {
+  background-color: #eab534;
+}
+
+.item-3 a:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+}/*efekt vzhatiya!*/
 
 .items h2 {
   font-size: 24px;
@@ -105,6 +159,18 @@ tr:nth-child(1) td {
   font-weight: bold;
 }
 
+.partner a {
+  opacity: 0.3;
+}
+
+.partner a:hover {
+  opacity: 1;
+}
+
+.partner a:active {
+  opacity: 0.1;
+}
+
 .contacts {
   background-color: #ffffff;
 }
@@ -119,8 +185,6 @@ tr:nth-child(1) td {
   font-size: 18px;
   color: #000000;
   font-weight: bold;
-
-
   text-transform: uppercase;
 }
 
@@ -133,6 +197,19 @@ tr:nth-child(1) td {
 .address p {
   line-height: 18px;
 }
+
+.footer-social a {
+  background-color: #e1e1e1;
+}
+
+.footer-social a:hover {
+  background-color: #e74246;
+}
+
+.footer-social a:active {
+  background-color: #d7373b;
+  opacity: 0.3;
+} /*efekt vzhatiya!*/
 
 .social-discount h3 {
   font-size: 36px;
@@ -151,10 +228,19 @@ tr:nth-child(1) td {
   text-align: center;
 }
 
-.filtres-show {
+.filtres input[type="radio"],
+.filtres label {
+  color: #283136;
+}
+
+.filtres input[type="radio"]:hover,
+.filtres label:hover {
   color: #000000;
-  background-color: #eeeeee;
-  text-transform: uppercase;
+}
+
+.filtres input[type="radio"]:disabled,
+.filtres label:disabled {
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filtres-apply h4{
@@ -166,6 +252,33 @@ tr:nth-child(1) td {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.filtres-apply a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filtres-apply a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filtres-apply a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.filtres button {
+  background-color: #eeeeee;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filtres button:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+.filtres button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .item-description {
@@ -189,6 +302,16 @@ tr:nth-child(1) td {
   background-color: #fb565a;
 }
 
+
+.item-description .button:hover{
+  background-color: #e74246;
+}
+
+.item-description .button:active {
+  background-color: #e74246;
+  color: rgba(255, 255, 255, 0.3);
+}/*efekt vzhatiya!*/
+
 .item-description span {
   display: block; /*4toby <a> ne prilipal*/
   line-height: 18px;
@@ -197,14 +320,27 @@ tr:nth-child(1) td {
 
 .pagination-list a {
   color: #000000;
+  background-color: #eeeeee;
 }
 
+.pagination-list a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+  background-color: #d5d5d5;
+}
+
+.current-button a {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+}
 /*forma soobsheniya*/
 
 .write-us-form label {
   line-height: 18px;
   font-weight: bold;
-  color: 000000;
+  color: #000000;
 }
 
 .write-us-form h2 {
@@ -214,7 +350,34 @@ tr:nth-child(1) td {
 }
 
 .write-us-form input[type="text"],
-.write-us-form input[type="mail"] {
+.write-us-form input[type="email"] {
   font: inherit;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.5);
+  border: 1px solid #d7dcde;
+  outline: 1px solid #000000;
+
+}
+
+.write-us-form input[type="text"]:hover,
+.write-us-form input[type="email"]:hover {
+  color: rgba(68, 68, 68, 0.5);
+  border: 1px solid #b4b9bb;
+}
+
+.write-us-form input[type="text"]:invalid,
+.write-us-form input[type="email"]:invalid {
+  color: rgba(231, 66, 70, 0.5);
+  border: 1px solid #e74246;
+}
+
+.close-button button {
+  background-color: #fecccd;
+}
+
+.close-button button:hover {
+  background-color: #fb565a;
+}
+
+.close-button button:hover {
+  background-color: #ffeeee;
 }
