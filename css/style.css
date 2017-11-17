@@ -18,11 +18,11 @@ img {
 }
 
 .main-header,
-.item-description {
+.item-description,
+.slider {
   background-color: #eeeeee;
 }
 
-/*?ne rabotaet?*/
 
 a.logo:hover{
   opacity: 0.8;
@@ -31,8 +31,6 @@ a.logo:hover{
 a.logo:active{
   opacity: 0.3;
 }
-
-/*?ne rabotaet?*/
 
 .site-navigation,
 .user-navigation,
@@ -81,11 +79,15 @@ a.logo:active{
 }
 
 .button {
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: none;
 }
 
 .slide .button,
@@ -93,6 +95,11 @@ a.logo:active{
 .contacts .button,
 .write-us-form .button {
   background-color: #fb565a;
+}
+
+.slide a {
+  width: 240px;
+  height: 50px;
 }
 
 .slide a:hover,
@@ -104,6 +111,7 @@ a.logo:active{
 .item-1 a:active {
   background-color: #e74246;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }/*efekt vzhatiya!*/
 
 .item-2 .button {
@@ -117,6 +125,7 @@ a.logo:active{
 .item-2 a:active {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }/*efekt vzhatiya!*/
 
 .item-3 .button {
@@ -130,11 +139,20 @@ a.logo:active{
 .item-3 a:active {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }/*efekt vzhatiya!*/
+
+.item-1 a,
+.item-2 a,
+.item-3 a {
+  width: 160px;
+  height: 50px;
+}
 
 .items h2 {
   font-size: 24px;
   font-style: bold;
+
   color: #000000;
   background-color: #ffffff;
   line-height: 30px;
@@ -210,6 +228,7 @@ tr:nth-child(1) td {
 .footer-social a:active {
   background-color: #d7373b;
   opacity: 0.3;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 } /*efekt vzhatiya!*/
 
 .social-discount h3 {
@@ -268,6 +287,9 @@ tr:nth-child(1) td {
 }
 
 .filtres button {
+  border: none;
+  width: 260px;
+  height: 50px;
   background-color: #eeeeee;
   color: #000000;
   text-transform: uppercase;
@@ -280,6 +302,7 @@ tr:nth-child(1) td {
 .filtres button:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .item-description {
@@ -299,6 +322,7 @@ tr:nth-child(1) td {
 }
 
 .item-description .button {
+  display: inline-block;
   color: #ffffff;
   background-color: #fb565a;
 }
@@ -311,10 +335,11 @@ tr:nth-child(1) td {
 .item-description .button:active {
   background-color: #e74246;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }/*efekt vzhatiya!*/
 
 .item-description span {
-  display: block; /*4toby <a> ne prilipal*/
+  display: block;
   line-height: 18px;
   color: #666666;
 }
@@ -330,6 +355,7 @@ tr:nth-child(1) td {
 
 .pagination-list a:active {
   background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .current-button a {
@@ -355,7 +381,6 @@ tr:nth-child(1) td {
   font: inherit;
   color: rgba(68, 68, 68, 0.5);
   border: 1px solid #d7dcde;
-  outline: 1px solid #000000;
 
 }
 
@@ -365,20 +390,28 @@ tr:nth-child(1) td {
   border: 1px solid #b4b9bb;
 }
 
+.write-us-form input[type="text"]:focus,
+.write-us-form input[type="email"]:focus {
+	outline: 0;
+	color: #000000;
+	border: 1px solid  #000000;
+}
+
 .write-us-form input[type="text"]:invalid,
 .write-us-form input[type="email"]:invalid {
   color: rgba(231, 66, 70, 0.5);
   border: 1px solid #e74246;
 }
 
-.close-button button {
+.close-button {
+  border: none;
   background-color: #fecccd;
 }
 
-.close-button button:hover {
+.close-button:hover {
   background-color: #fb565a;
 }
 
-.close-button button:hover {
+.close-button:hover {
   background-color: #ffeeee;
 }
