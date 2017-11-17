@@ -28,8 +28,10 @@ a.logo:hover{
   opacity: 0.8;
 }
 
-a.logo:active{
+a.logo:active,
+a.logo:focus /*xprt*/{
   opacity: 0.3;
+  
 }
 
 .site-navigation,
@@ -108,7 +110,9 @@ a.logo:active{
 }
 
 .slide a:active,
-.item-1 a:active {
+.item-1 a:active,
+.slide a:focus,
+.item-1 a:focus /**/ {
   background-color: #e74246;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
@@ -122,10 +126,12 @@ a.logo:active{
   background-color: #00bc6c;
 }
 
-.item-2 a:active {
+.item-2 a:active,
+.item-2 a:focus/*xprt*/ {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  
 }/*efekt vzhatiya!*/
 
 .item-3 .button {
@@ -136,10 +142,12 @@ a.logo:active{
   background-color: #eab534;
 }
 
-.item-3 a:active {
+.item-3 a:active,
+.item-3 a:focus/*xprt*/ {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  
 }/*efekt vzhatiya!*/
 
 .item-1 a,
@@ -186,8 +194,10 @@ tr:nth-child(1) td {
   opacity: 1;
 }
 
-.partner a:active {
+.partner a:active,
+.partner a:focus /*xprt*/ {
   opacity: 0.1;
+  
 }
 
 .contacts {
@@ -225,10 +235,12 @@ tr:nth-child(1) td {
   background-color: #e74246;
 }
 
-.footer-social a:active {
+.footer-social a:active,
+.footer-social a:focus /**/ {
   background-color: #d7373b;
   opacity: 0.3;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  
 } /*efekt vzhatiya!*/
 
 .social-discount h3 {
@@ -282,8 +294,11 @@ tr:nth-child(1) td {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.filtres-apply a:active {
+.filtres-apply a:active,
+.filtres-apply a:focus /*xprt*/ {
   color: rgba(0, 0, 0, 1);
+  
+
 }
 
 .filtres button {
@@ -299,10 +314,12 @@ tr:nth-child(1) td {
   background-color: #dfdfdf;
   color: #000000;
 }
-.filtres button:active {
+.filtres button:active,
+.filtres button:focus /*xprt*/{
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  
 }
 
 .item-description {
@@ -332,10 +349,12 @@ tr:nth-child(1) td {
   background-color: #e74246;
 }
 
-.item-description .button:active {
+.item-description .button:active,
+.item-description .button:focus/*xprt*/ {
   background-color: #e74246;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  
 }/*efekt vzhatiya!*/
 
 .item-description span {
@@ -353,9 +372,11 @@ tr:nth-child(1) td {
   background-color: #dfdfdf;
 }
 
-.pagination-list a:active {
+.pagination-list a:active,
+.pagination-list a:focus/*xprt*/ {
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  
 }
 
 .current-button a {
@@ -392,7 +413,7 @@ tr:nth-child(1) td {
 
 .write-us-form input[type="text"]:focus,
 .write-us-form input[type="email"]:focus {
-	outline: 0;
+    outline: 0;
 	color: #000000;
 	border: 1px solid  #000000;
 }
@@ -404,6 +425,7 @@ tr:nth-child(1) td {
 }
 
 .close-button {
+
   border: none;
   background-color: #fecccd;
 }
