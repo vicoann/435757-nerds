@@ -731,6 +731,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 56px;
 }
 
 .filtres-apply h4 {
@@ -762,7 +763,6 @@ html {
 
 .item-description {
   width: 360px;
-  height: 230px;
   margin: 0px;
 }
 
@@ -779,4 +779,36 @@ html {
 
 .pagination-list li {
   margin-right: 10px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.catalog-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.item-description {
+  padding-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 41px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.catalog {
+  margin-bottom: 58px;
+}
+
+.catalog-content section:last-child {
+  margin-bottom: 58px;
 }
