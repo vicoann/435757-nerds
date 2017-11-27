@@ -262,14 +262,6 @@ tr:nth-child(1) td {
 
 /* catalog */
 
-.container h1 {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
-  background-color: #eeeeee;
-  text-align: center;
-}
-
 .filtres input[type="radio"],
 .filtres label {
   color: #283136;
@@ -454,7 +446,7 @@ tr:nth-child(1) td {
 body,
 html {
   min-width: 1165px;
-  min-height: 2476px;
+
 }
 
 
@@ -563,7 +555,7 @@ html {
   margin-top: 23px;
 }
 
-.features-wrapper {
+.features {
   display: flex;
   justify-content: space-between;
   padding-bottom: 73px;
@@ -617,7 +609,7 @@ html {
 
 .contacts {
   position: relative;
-  min-height: 372px;
+  min-height: 420px;
   z-index: 1;
 }
 
@@ -706,8 +698,12 @@ html {
 .catalog-title h1 {
   margin: 0px;
   padding: 0px;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  background-color: #eeeeee;
+  text-align: center;
   padding-top: 68px;
-
 }
 
 .catalog-content {
@@ -784,10 +780,7 @@ html {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.catalog-item:nth-child(odd) {
-  margin-right: 20px;
+  justify-content: space-between;
 }
 
 .catalog-item {
