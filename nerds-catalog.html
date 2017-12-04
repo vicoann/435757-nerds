@@ -43,13 +43,25 @@
           <form method="get" class="filter" action="https://echo.htmlacademy.ru" >
             <fieldset class="filter-item">
               <legend>Стоимость</legend>
-              <label for="cost">Стоимость</label>
-              <input id="cost" type="range" min="0" max="15000">
-              <span>от</span>
-              <span>до</span>
+
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+
+                <div class="price-controls">
+                  <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+                </div>
+
+              </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-item">
               <legend title="Выберите сетку шаблона">Сетка</legend>
               <ul>
                 <li>
@@ -67,7 +79,7 @@
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-item">
               <legend aria-label="Выберите особенности шаблона">Особенности</legend>
               <ul>
                 <li>
@@ -107,8 +119,8 @@
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
-              <!--<li><a href="#"><img src="img/svg-nerds/icon-down-dir.svg" title="поменять порядок по возрастанию"></a></li>
-              <li><a href="#"><img src="img/svg-nerds/icon-up-dir.svg" title="поменять порядок по убыванию"</a><li>-->
+             <li><a href="#"><img src="img/svg-nerds/icon-down-dir.svg" title="поменять порядок по возрастанию"></a></li>
+              <li><a href="#"><img src="img/svg-nerds/icon-up-dir.svg" title="поменять порядок по убыванию"</a><li> 
             </ul>
 
 
@@ -193,10 +205,10 @@
         </section>
 
         <ul class="pagination-list" aria-label="Перемещение по страницам каталога">
-              <li><a class="current-button button" href="#" title="текущая страница">1</a></li>
-              <li><a class="button" href="#" title="страница 2">2</a></li>
-              <li><a class="button" href="#" title="страница 3">3</a></li>
-              <li><a class="button" href="#" title="4 и последующие страницы">Следующая</a></li>
+              <li class="current-button pag-button"><a  href="#" title="текущая страница">1</a></li>
+              <li class="pag-button"><a href="#" title="страница 2">2</a></li>
+              <li class="pag-button"><a href="#" title="страница 3">3</a></li>
+              <li class="pag-button"><a href="#" title="4 и последующие страницы">Следующая</a></li>
         </ul>
       </div> <!--item-cards-->
     </div><!--container-->
