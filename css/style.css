@@ -199,7 +199,7 @@ input[type="radio"].visually-hidden {
   width: 240px;
   height: 50px;
   box-sizing: border-box;
-  padding: 16px 0;
+  padding: 18px 0;
 
   border-radius: 3px;
   border: none;
@@ -297,11 +297,11 @@ tr:nth-child(2) td {
 }
 
 tr td:nth-child(2) {
-  padding-left: 13px;
+  padding-left: 15px;
 }
 
 tr td:nth-child(3) {
-  padding-left: 20px;
+  padding-left: 21px;
 }
 
 .feature-table img {
@@ -482,6 +482,7 @@ tr td:nth-child(3) {
   background-color: #dfdfdf;
   color: #000000;
 }
+
 .filtres button:active,
 .filtres button:focus /*xprt*/{
   background-color: #d5d5d5;
@@ -1086,56 +1087,57 @@ html {
   list-style: none;
 }
 
+
 .pagination-list {
   display: flex;
-  margin-bottom: 60px;
 }
 
-.pagination-list li {
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 50px;
-  height: 50px;
+.pag {
+  display: inline-block;
   box-sizing: border-box;
   background-color: #eeeeee;
   border-radius: 3px;
+  margin-right: 12px;
 
-}
-
-.pagination-list a {
   color: #000000;
   text-transform: uppercase;
-}
-
-.pagination-list a:hover {
-  background-color: #dfdfdf;
-}
-
-.pagination-list li:nth-last-child(1) {
-  width: 260px;
+  min-width: 50px;
   height: 50px;
-  box-sizing: border-box;
-  background-color: #ededed;
-  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.pagination-list .current-button {
+
+.pag-next {
+  min-width: 265px;
+  height: 50px;
+}
+
+.pag-current {
+  border: 2px solid #dbdbdb;
   background-color: #ffffff;
-  border-radius: 3px;
-  border: 3px solid #dbdbdb;
+  box-sizing: border-box;
 }
 
+.pag:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
 
+.pag:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
 
 /*
-
 .pagination-list li:active,
 .pagination-list li:focus {
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+
 
  */
 
@@ -1161,18 +1163,19 @@ html {
   opacity: 0.12;
 }
 
-.catalog-item::before:hover {
-  opacity: 1;
-}
-
 .item-description {
   position: absolute;
   bottom: 0px;
   opacity: 0;
 }
 
-.catalog-item:hover .item-description {
+.catalog-item:hover .item-description,
+.catalog-item:hover::before {
   opacity: 1;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.25);
 }
 
 .catalog {
