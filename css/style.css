@@ -1243,22 +1243,36 @@ html {
   border: none;
 }
 
-.filter-item ul,
-.filter-item li {
+.filter-item ul {
     margin:  0;
     padding: 0;
 
     list-style: none;
 }
 
+.filter-item legend {
+  margin-bottom: 6px;
+}
+
+.filter-item li {
+  padding: 0;
+
+  list-style: none;
+
+  margin: 5px 0;
+}
+
 .filter-item:nth-child(2) {
-  margin-top: 54px;
-  margin-bottom: 40px;
+  margin-top: 61px;
 }
 
 .filter-item:nth-child(3) {
-
+  margin-top: 27px;
   margin-bottom: 47px;
+}
+
+.filter-item:nth-child(3) legend {
+  margin-bottom: 12px;
 }
 
 .range-filter {
@@ -1367,33 +1381,15 @@ html {
   text-align: right;
 }
 
-.filter-item:nth-child(2) li,
-.filter-item:nth-child(3) li {
-  display: flex;
-  align-items: center;
-  margin: 14px 0;
-}
-
-.filter-item:nth-child(2) li:last-child,
-.filter-item:nth-child(3) li:last-child  {
-  margin-bottom: 0;
-}
-
-.filter-item:nth-child(2) li:nth-child(1)::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/svg-nerds/radio-on.svg");
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  margin-right: 10px;
-
+.radio,
+.checkbox {
+  display: inline-flex;
   cursor: pointer;
+
+  align-items: flex-start;
 }
 
-.filter-item:nth-child(2) li:nth-child(2)::before,
-.filter-item:nth-child(2) li:nth-child(3)::before {
+input[type="radio"]:enabled + .radio::before {
   content: "";
   display: inline-block;
   width: 30px;
@@ -1401,13 +1397,23 @@ html {
   background-image: url("../img/svg-nerds/radio-off.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
-  margin-right: 10px;
-
-  cursor: pointer;
+  margin-right: 8px;
 }
 
-.filter-item:nth-child(3) li:not(:nth-child(1))::before,
-.filter-item:nth-child(3) li:not(:nth-child(3))::before {
+
+input[type=radio]:checked + .radio::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/svg-nerds/radio-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  margin-right: 8px;
+}
+
+
+input[type="checkbox"]:enabled + .checkbox::before {
   content: "";
   display: inline-block;
   width: 30px;
@@ -1415,13 +1421,10 @@ html {
   background-image: url("../img/svg-nerds/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
-  margin-right: 10px;
-
-  cursor: pointer;
+  margin-right: 8px;
 }
 
-.filter-item:nth-child(3) li:nth-child(1)::before,
-.filter-item:nth-child(3) li:nth-child(3)::before {
+input[type="checkbox"]:checked + .checkbox::before {
   content: "";
   display: inline-block;
   width: 30px;
@@ -1429,7 +1432,5 @@ html {
   background-image: url("../img/svg-nerds/checkbox-on.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
-  margin-right: 10px;
-
-  cursor: pointer;
+  margin-right: 8px;
 }
