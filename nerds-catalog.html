@@ -235,28 +235,38 @@
         </div>
 
         <section class="write-us-form">
-          <h2>Напишите нам</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-              <div>
-              <label for="your-name">Ваше имя:</label>
-              <input type="text" class="name" id="your-name" placeholder="Представтесь, пожалуйста">
+          <div class="form-wrapper">
+            <div class="title-close">
+              <h2>Напишите нам</h2>
+              <button class="close-button" type="button">
+                <div class="line1"></div>
+                <div class="line2"></div>
+              </button>
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="name-email-form">
+                  <div>
+                  <label for="your-name">Ваше имя:</label>
+                  <input type="text" class="name" id="your-name" placeholder="Представтесь, пожалуйста">
+                  </div>
+
+                  <div>
+                  <label for="your-mail">Ваш e-mail:</label>
+                  <input type="email" class="mail" id="your-mail" placeholder="Для отправки ответа">
+                  </div>
               </div>
 
-              <div>
-              <label for="your-mail">Ваш e-mail:</label>
-              <input type="email" class="mail" id="your-mail" placeholder="Для отправки ответа">
-              </div>
+                <div class="text-form">
+                <label for="your-message">Текст письма:</label>
+                <textarea name="comment" id="your-message" rows="6">В свободной форме</textarea>
+                </div>
 
-              <div>
-              <label for="your-message">Текст письма:</label>
-              <input type="text" class="message" id="your-message" placeholder="В свободной форме">
-              </div>
+                <div>
+                <button class="button red-button" type="submit">Отправить</button>
+                </div>
+            </form>
+          </div>
 
-              <div>
-              <button class="button red-button" type="submit">Отправить</button>
-              </div>
-          </form>
-          <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму отправки сообщения</span></button>
         </section>
 
   </section>

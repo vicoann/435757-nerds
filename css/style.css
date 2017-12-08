@@ -554,9 +554,9 @@ tr td:nth-child(3) {
 .write-us-form {
   display: block;
 
-  box-shadow:  0px 20px 30px 0px rgba(0, 1, 1, 0.75);
+  box-shadow:  0px 20px 40px 0px rgba(0, 1, 1, 0.75);
   position: fixed;
-  bottom: 177px;
+  bottom: 180px;
 
   left: 50%;
   transform: translateX(-50%);
@@ -585,7 +585,7 @@ tr td:nth-child(3) {
 .title-close {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .write-us-form h2 {
@@ -595,6 +595,48 @@ tr td:nth-child(3) {
   margin: 0;
   font-weight: 300;
 }
+
+.title-close button {
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.3;
+  border: none;
+  position: relative;
+  width: 27px;
+  height: 27px;
+  color: red;
+  margin-right: -16px;
+  margin-top: 6px;
+}
+
+.title-close button:hover {
+  opacity: 1;
+}
+
+.title-close button:active {
+  opacity: 0.1;
+}
+
+.line1 {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 2px;
+  height: 27px;
+  background-color: #fb565a;
+  transform: rotate(45deg);
+}
+
+.line2 {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 2px;
+  height: 27px;
+  background-color: #fb565a;
+  transform: rotate(135deg);
+}
+
 
 .name-email-form {
   display: flex;
@@ -645,10 +687,20 @@ tr td:nth-child(3) {
   height: 49px;
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 13px;
 }
 
-.text-form input[type="text"] {
-    height: 117px;
+.write-us-form input[type="email"]:invalid {
+  color: #e74246;
+  border-color: #e74246;
+}
+
+
+.write-us-form textarea {
+  overflow: hidden;
+  color: rgba(68, 68, 68, 0.5);
+  border: 2px solid #d7dcde;
+  border-radius: 4px;
 }
 
 .write-us-form input[type="text"]:hover,
@@ -898,7 +950,7 @@ html {
   margin: 0px;
   padding: 0px;
   margin-bottom: 33px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.2px;
 }
 
 .feature-item p {
