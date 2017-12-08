@@ -44,7 +44,7 @@
               <h3>Долго, дорого,<br>скрупулезно.</h3>
               <p>Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения.</p>
-              <a class="button" href="#" title="больше о продуктах студии Нёрдс">Узнать больше</a>
+              <a class="red-button button" href="#" title="больше о продуктах студии Нёрдс">Узнать больше</a>
             </div>
             <img class="slide-img" src="img/slide1.png" width="698" height="413" alt="Мобильные приложения и веб-сайты студии Нёрдс">
           </div>
@@ -54,7 +54,7 @@
               <h3>Любим математику как никто другой</h3>
               <p>Никакого креатива, только математические формулы<br>
               для расчета идеальных пропорций.</p>
-              <a class="button" href="#" title="больше о методах нашей работы">Узнать больше</a>
+              <a class="red-button button" href="#" title="больше о методах нашей работы">Узнать больше</a>
             </div>
             <img class="slide-img" src="img/slide2.png" width="698" height="413" alt="Шаблоны веб-сайтов студии Нёрдс">
           </div>
@@ -64,7 +64,7 @@
               <h3>Только ночь,<br>только хардкор</h3>
               <p>Работать днем, как все? Мы против этого<br>
               Ближе к полуночи работа только начинается.</p>
-              <a class="button" href="#" title="больше о команде разработчиков студии Нёрдс">Узнать больше</a>
+              <a class="red-button button" href="#" title="больше о команде разработчиков студии Нёрдс">Узнать больше</a>
             </div>
             <img class="slide-img" src="img/slide3.png" width="759" height="411" alt="Шаблоны приложений для мобильных устройств и планшетов студии Нёрдс">
           </div>
@@ -174,7 +174,7 @@
           <div class="address">
             <h4>Nёrds design studio</h4>
             <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д.19/8<br><br>тел. +7 (812) 275-75-75</p>
-            <button class="button" type="button">Напишите нам</button>
+            <button class="button red-button" type="button">Напишите нам</button>
           </div>
 
           <div class="map-marker">
@@ -182,31 +182,39 @@
           </div>
 
           <section class="write-us-form">
-            <h2>Напишите нам</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <div>
-                <label for="your-name">Ваше имя:</label>
-                <input type="text" class="name" id="your-name" placeholder="Представтесь, пожалуйста">
+            <div class="form-wrapper">
+              <div class="title-close">
+                <h2>Напишите нам</h2>
+                <button class="close-button" type="button"></button>
+              </div>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="name-email-form">
+                    <div>
+                    <label for="your-name">Ваше имя:</label>
+                    <input type="text" class="name" id="your-name" placeholder="Представтесь, пожалуйста">
+                    </div>
+
+                    <div>
+                    <label for="your-mail">Ваш e-mail:</label>
+                    <input type="email" class="mail" id="your-mail" placeholder="Для отправки ответа">
+                    </div>
                 </div>
 
-                <div>
-                <label for="your-mail">Ваш e-mail:</label>
-                <input type="email" class="mail" id="your-mail" placeholder="Для отправки ответа">
-                </div>
+                  <div class="text-form">
+                  <label for="your-message">Текст письма:</label>
+                  <input type="text" class="message" id="your-message" placeholder="В свободной форме">
+                  </div>
 
-                <div>
-                <label for="your-message">Текст письма:</label>
-                <input type="text" class="message" id="your-message" placeholder="В свободной форме">
-                </div>
+                  <div>
+                  <button class="button red-button" type="submit">Отправить</button>
+                  </div>
+              </form>
+            </div>
 
-                <div>
-                <button class="button" type="submit">Отправить</button>
-                </div>
-            </form>
-            <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму отправки сообщения</span></button>
           </section>
 
     </section>
+
 
     <footer class="main-footer">
       <div class="container footer-wrap">
