@@ -10,6 +10,11 @@
   background-color: #ffffff;
 }
 
+body,
+html {
+  min-width: 1160px;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,7 +40,6 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   overflow: hidden;
 }
-
 
 .main-header,
 .item-description,
@@ -132,6 +136,7 @@ input[type="radio"].visually-hidden {
 
 .slider-nav li {
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
 
@@ -314,6 +319,7 @@ tr td:nth-child(3) {
   width: 2px;
   height: 52px;
   display: inline-block;
+  vertical-align: top;
   background-color: #d3d3d3;
 
   position: absolute;
@@ -417,6 +423,7 @@ tr td:nth-child(3) {
 
 .filtres-apply a {
   color: rgba(0, 0, 0, 0.3);
+
 }
 
 .filtres-apply a:hover {
@@ -424,22 +431,22 @@ tr td:nth-child(3) {
 }
 
 .filtres-apply a:active,
-.filtres-apply a:focus {
+.filtres-apply a:focus,
+.filtres-current {
   color: rgba(0, 0, 0, 1);
 }
 
-.filtres-nav a {
-  opacity: 0.1;
+.filtres-order {
+opacity: 0.1;
 }
 
-.filtres-nav a:hover {
+.filtres-order:hover {
   opacity: 0.3;
 }
 
-.filtres-nav a:active,
-.filtres-apply a:focus,
-.filtres-nav .filtres-current,
-.filtres-criteria .filtres-current {
+.filtres-order:active,
+.filtres-order:focus,
+.filtres-current {
   opacity: 1;
 }
 
@@ -704,15 +711,11 @@ tr td:nth-child(3) {
 
 .write-us-button {
 display: inline-block;
+vertical-align: top;
+vertical-align: top;
 width: 189px;
 padding: 16px;
 border-radius: 4px;
-}
-
-body,
-html {
-  min-width: 1165px;
-
 }
 
 .container {
@@ -887,6 +890,7 @@ html {
 .feature-item li::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 25px;
   height: 2px;
   background-color: #fb5559;
@@ -970,6 +974,7 @@ img.main-map  {
 
 .address button {
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   height: 49px;
   border-radius: 3px;
@@ -1104,25 +1109,22 @@ img.main-map  {
 
 .filtres-class {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 360px;
+  min-width: 360px;
 }
 
-.filtres-criteria {
-  display: flex;
+
+.filtres-class li:nth-child(1),
+.filtres-class li:nth-child(2){
+  margin-right: 26px;
 }
 
-.filtres-criteria li:not(:nth-last-child(1)) {
-  margin-right: 25px;
+.filtres-class li:nth-last-child(2) {
+  margin-left: 50px;
 }
 
-.filtres-nav {
-  display: flex;
-}
-
-.filtres-nav li:nth-child(1) {
-  margin-right: 19px;
+.filtres-class li:nth-last-child(1) {
+  margin-left: 15px;
 }
 
 .catalog-list {
@@ -1168,6 +1170,7 @@ img.main-map  {
 
 .pag {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   background-color: #eeeeee;
   border-radius: 3px;
@@ -1395,6 +1398,7 @@ img.main-map  {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 
   font-size: 16px;
@@ -1436,6 +1440,7 @@ img.main-map  {
 input[type="radio"]:enabled + .radio::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 30px;
   height: 30px;
   background-image: url("../img/svg-nerds/radio-off.svg");
@@ -1447,6 +1452,7 @@ input[type="radio"]:enabled + .radio::before {
 input[type=radio]:checked + .radio::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 30px;
   height: 30px;
   background-image: url("../img/svg-nerds/radio-on.svg");
@@ -1458,6 +1464,7 @@ input[type=radio]:checked + .radio::before {
 input[type="checkbox"]:enabled + .checkbox::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 30px;
   height: 30px;
   background-image: url("../img/svg-nerds/checkbox-off.svg");
