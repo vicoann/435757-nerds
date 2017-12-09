@@ -19,12 +19,10 @@ img {
   height: auto;
 }
 
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
 
@@ -54,9 +52,8 @@ input[type="radio"].visually-hidden {
 }
 
 .logo:active,
-.logo:focus /*xprt*/{
+.logo:focus{
   opacity: 0.3;
-
 }
 
 .site-navigation,
@@ -78,7 +75,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -92,17 +88,11 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* aktivny, nahodimsya na stranitse
-.current-page{
-  border-bottom: 2px solid #fb565a;
-}
- ? ne znau pravilno li sdelala? */
-
 .slide h3 {
   font-size: 55px;
   color: #000000;
   line-height: 55px;
-  /*background-color: #eeeeee;* povtoryaetsya kak i v .main-header*/
+  background-color: #eeeeee;
 }
 
 .button {
@@ -114,7 +104,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   vertical-align: middle;
   border: none;
-  border-radius: none;
+  border-radius: 0;
   background-color: #fb565a;
 }
 
@@ -123,7 +113,6 @@ input[type="radio"].visually-hidden {
   margin: 0px;
   padding: 0px;
   list-style: none;
-
 }
 
 .slider-nav {
@@ -140,7 +129,6 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   transform: translateX(-50%);
 }
-
 
 .slider-nav li {
   display: inline-block;
@@ -168,7 +156,6 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   border-radius: 50%;
-
 }
 
 .slider-nav .active::before {
@@ -208,7 +195,7 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-}/*efekt vzhatiya!*/
+}
 
 .item-2 .green-button {
   background-color: #00ca74;
@@ -219,12 +206,11 @@ input[type="radio"].visually-hidden {
 }
 
 .item-2 .green-button:active,
-.item-2 .green-button:focus/*xprt*/ {
+.item-2 .green-button:focus{
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-
-}/*efekt vzhatiya!*/
+}
 
 .item-3 .yellow-button {
   background-color: #efc84a;
@@ -235,12 +221,11 @@ input[type="radio"].visually-hidden {
 }
 
 .item-3 .yellow-button:active,
-.item-3 .yellow-button:focus/*xprt*/ {
+.item-3 .yellow-button:focus{
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-
-}/*efekt vzhatiya!*/
+}
 
 .item-1 .red-button,
 .item-2 .green-button,
@@ -350,9 +335,8 @@ tr td:nth-child(3) {
 }
 
 .partner a:active,
-.partner a:focus /*xprt*/ {
+.partner a:focus {
   opacity: 0.1;
-
 }
 
 .contacts {
@@ -380,7 +364,7 @@ tr td:nth-child(3) {
 .address p {
   line-height: 18px;
   margin: 0px;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   letter-spacing: 0.3px;
   padding-left: 1px;
@@ -404,8 +388,6 @@ tr td:nth-child(3) {
 .footer-social a:focus img {
   opacity: 0.3;
 }
-
-/* catalog */
 
 .filtres input[type="radio"],
 .filtres label {
@@ -442,7 +424,7 @@ tr td:nth-child(3) {
 }
 
 .filtres-apply a:active,
-.filtres-apply a:focus /*xprt*/ {
+.filtres-apply a:focus {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -478,11 +460,10 @@ tr td:nth-child(3) {
 }
 
 .filtres button:active,
-.filtres button:focus /*xprt*/{
+.filtres button:focus {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-
 }
 
 .item-description {
@@ -536,12 +517,11 @@ tr td:nth-child(3) {
 }
 
 .item-description .button:active,
-.item-description .button:focus/*xprt*/ {
+.item-description .button:focus{
   background-color: #e74246;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-
-}/*efekt vzhatiya!*/
+}
 
 .item-description span {
   display: block;
@@ -549,11 +529,8 @@ tr td:nth-child(3) {
   color: #666666;
 }
 
-/*forma soobsheniya*/
-
 .write-us-form {
-  display: block;
-
+  display: none;
   box-shadow:  0px 20px 40px 0px rgba(0, 1, 1, 0.75);
   position: fixed;
   bottom: 180px;
@@ -573,6 +550,9 @@ tr td:nth-child(3) {
   background-color: #ffffff;
 }
 
+.write-us-form-show {
+  display: block;
+}
 
 .form-wrapper {
   margin-left: 100px;
@@ -580,7 +560,6 @@ tr td:nth-child(3) {
   margin-right: 100px;
   margin-bottom: 84px;
 }
-
 
 .title-close {
   display: flex;
@@ -637,7 +616,6 @@ tr td:nth-child(3) {
   transform: rotate(135deg);
 }
 
-
 .name-email-form {
   display: flex;
   justify-content: space-between;
@@ -654,16 +632,6 @@ tr td:nth-child(3) {
   display: flex;
   flex-direction: column;
   margin-bottom: 47px;
-}
-
-.write-us-form-show {
-  display: block;
-  font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .write-us-form label {
@@ -704,14 +672,16 @@ tr td:nth-child(3) {
 }
 
 .write-us-form input[type="text"]:hover,
-.write-us-form input[type="email"]:hover {
+.write-us-form input[type="email"]:hover,
+.write-us-form textarea:hover {
   color: rgba(68, 68, 68, 0.5);
   border: 1px solid #b4b9bb;
 }
 
 .write-us-form input[type="text"]:focus,
-.write-us-form input[type="email"]:focus {
-    outline: 0px;
+.write-us-form input[type="email"]:focus,
+.write-us-form textarea:focus {
+  outline: 0px;
 	color: #000000;
 	border: 1px solid  #000000;
 }
@@ -732,35 +702,18 @@ tr td:nth-child(3) {
   border-radius: 3px;
 }
 
-/*
-
-
-
-.close-button {
-
-  border: none;
-  background-color: #fecccd;
+.write-us-button {
+display: inline-block;
+width: 189px;
+padding: 16px;
+border-radius: 4px;
 }
-
-.close-button:hover {
-  background-color: #fb565a;
-}
-
-.close-button:hover {
-  background-color: #ffeeee;
-}
-
-
-домашнее задание СЕТКИ*/
 
 body,
 html {
   min-width: 1165px;
 
 }
-
-
-/*домашняя работа СЕТКИ*/
 
 .container {
   width: 1160px;
@@ -836,7 +789,6 @@ html {
 
 .slide {
   position: relative;
-
 }
 
 .slide-img {
@@ -852,8 +804,6 @@ html {
 .slide h3 {
   margin-top: 0px;
 }
-
-/*items*/
 
 .items,
 .item,
@@ -885,8 +835,7 @@ html {
 .item .red-button,
 .item .green-button,
 .item .yellow-button {
-    display: block;
-
+  display: block;
 }
 
 .item h2 {
@@ -944,8 +893,6 @@ html {
   margin-right: 10px;
 }
 
-
-
 .feature-item h2 {
   margin: 0px;
   padding: 0px;
@@ -986,8 +933,6 @@ html {
   text-align: center;
 }
 
-
-
 .contacts {
   position: relative;
   min-height: 416px;
@@ -995,19 +940,21 @@ html {
 }
 
 .main-map {
-  z-index: -1;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 0px;
+}
 
+img.main-map  {
+  z-index: -2;
 }
 
 .address {
   padding-bottom: 46px;
   padding-top: 52px;
   padding-right: 50px;
-  padding-left: 48px;
+  padding-left: 49px;
   width: 320px;
   box-sizing: border-box;
   position: absolute;
@@ -1030,12 +977,15 @@ html {
 
 .map-marker {
   position: relative;
+  z-index: -1;
 }
 
 .map-marker img {
   position: absolute;
   top: 90px;
   left: 680px;
+
+
 }
 
 .main-footer {
@@ -1068,7 +1018,6 @@ html {
   height: 78px;
   background-color: #e1e1e1;
   border-radius: 50%;
-
 }
 
 .footer-social .social-icon {
@@ -1101,12 +1050,8 @@ html {
 
 }
 
-/*catalog*/
-
 .catalog-title {
-
   background-color: #eeeeee;
-
 }
 
 .catalog-title h1 {
@@ -1178,31 +1123,12 @@ html {
 
 .filtres-nav li:nth-child(1) {
   margin-right: 19px;
-
 }
-
-/*
-.filtres-class li:nth-last-child(1) {
-  width: 13px;
-  height: 15px;
-  background-image: url("../img/svg-nerds/icon-up-dir.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.filtres-class li:nth-last-child(2) {
-  width: 13px;
-  height: 15px;
-  background-image: url("../img/svg-nerds/icon-down-dir.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .catalog-list {
   margin: 0px;
   padding: 0px;
   list-style: none;
-
 }
 
 .catalog-item {
@@ -1256,7 +1182,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
 
 .pag-next {
   min-width: 258px;
@@ -1322,10 +1247,6 @@ html {
   box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.25);
 }
 
-
-
-
-/*декоративные элементы*/
 .current-page {
   position: relative;
 }
@@ -1339,12 +1260,6 @@ html {
   bottom: -10px;
   left: 0px;
 }
-
-/*
-.main-navigation {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 1px green;
-}*/
 
 .user-navigation li {
   min-width: 135px;
@@ -1372,8 +1287,6 @@ html {
 .user-navigation {
   padding-top: 26px;
 }
-
-/*filtr*/
 
 .filter-item {
   margin: 0;
@@ -1446,15 +1359,12 @@ html {
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
 .range-controls .bar {
-
   height: 2px;
   width: 65%;
-
   background: #00ca74;
 }
 
@@ -1534,7 +1444,6 @@ input[type="radio"]:enabled + .radio::before {
   margin-right: 8px;
 }
 
-
 input[type=radio]:checked + .radio::before {
   content: "";
   display: inline-block;
@@ -1545,7 +1454,6 @@ input[type=radio]:checked + .radio::before {
   opacity: 0.4;
   margin-right: 8px;
 }
-
 
 input[type="checkbox"]:enabled + .checkbox::before {
   content: "";
@@ -1567,4 +1475,12 @@ input[type="checkbox"]:checked + .checkbox::before {
   background-repeat: no-repeat;
   opacity: 0.4;
   margin-right: 8px;
+}
+
+.iframe {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
 }
