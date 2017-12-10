@@ -31,45 +31,56 @@
     </header>
 
       <h1 class="visually-hidden">Студия веб-дизайна Нёрдс</h1>
-      <div class="slider">
+      <div class="slider-wrapper">
         <div class="container">
-          <ul class="slider-nav" aria-label="перемещение по слайдеру">
-            <li><i class="active" title="текущий слайд"></i></li>
-            <li><i title="следующий слайд"></i></li>
-            <li><i title="последний слайд"></i></li>
-          </ul>
 
-          <div class="slide slide-1">
-            <div class="text-wrapper">
-              <h3>Долго, дорого,<br>скрупулезно.</h3>
-              <p>Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения.</p>
-              <a class="red-button button" href="#" title="больше о продуктах студии Нёрдс">Узнать больше</a>
-            </div>
-            <img class="slide-img" src="img/slide1.png" width="698" height="413" alt="Мобильные приложения и веб-сайты студии Нёрдс">
+          <div class="slider">
+
+              <input class="visually-hidden" type="radio" name="point" id="slide1">
+              <input class="visually-hidden" type="radio" name="point" id="slide2">
+              <input class="visually-hidden" type="radio" name="point" id="slide3">
+
+              <div class="slider-nav">
+                <label class="active" for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+              </div>
+
+              <div class="slide slide-1">
+                <div class="text-wrapper">
+                  <h3>Долго, дорого,<br>скрупулезно.</h3>
+                  <p>Математически выверенный дизайн<br>
+                  для вашего сайта или мобильного приложения.</p>
+                  <a class="red-button button" href="#" title="больше о продуктах студии Нёрдс">Узнать больше</a>
+                </div>
+
+              </div>
+
+              <div class="slide slide-2">
+                <div class="text-wrapper">
+                  <h3>Любим математику как никто другой</h3>
+                  <p>Никакого креатива, только математические формулы<br>
+                  для расчета идеальных пропорций.</p>
+                  <a class="red-button button" href="#" title="больше о методах нашей работы">Узнать больше</a>
+                </div>
+
+              </div>
+
+              <div class="slide slide-3">
+                <div class="text-wrapper">
+                  <h3>Только ночь,<br>только хардкор</h3>
+                  <p>Работать днем, как все? Мы против этого<br>
+                  Ближе к полуночи работа только начинается.</p>
+                  <a class="red-button button" href="#" title="больше о команде разработчиков студии Нёрдс">Узнать больше</a>
+                </div>
+
+              </div>
+
           </div>
 
-          <div class="slide slide-2">
-            <div class="text-wrapper">
-              <h3>Любим математику как никто другой</h3>
-              <p>Никакого креатива, только математические формулы<br>
-              для расчета идеальных пропорций.</p>
-              <a class="red-button button" href="#" title="больше о методах нашей работы">Узнать больше</a>
-            </div>
-            <img class="slide-img" src="img/slide2.png" width="698" height="413" alt="Шаблоны веб-сайтов студии Нёрдс">
-          </div>
+        </div>
 
-          <div class="slide slide-3">
-            <div class="text-wrapper">
-              <h3>Только ночь,<br>только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого<br>
-              Ближе к полуночи работа только начинается.</p>
-              <a class="red-button button" href="#" title="больше о команде разработчиков студии Нёрдс">Узнать больше</a>
-            </div>
-            <img class="slide-img" src="img/slide3.png" width="759" height="411" alt="Шаблоны приложений для мобильных устройств и планшетов студии Нёрдс">
-          </div>
-        </div><!--container-->
-      </div>  <!--slider-->
+      </div>
 
 
     <main>
@@ -119,7 +130,7 @@
             <section class="feature-table">
               <img src="img/nerds-illustration.png" width="360" height="208"  alt="Логотип студии Нёрдс">
               <h4>С 2004 года любим точность во всем:</h4>
-              <table>
+              <table class="table">
                 <tr class="table-percentage">
                   <td>146<sup>%</sup></td>
                   <td>100<sup>%</sup></td>
@@ -163,7 +174,7 @@
             </li>
             </ul>
         </section>
-      </div> <!--container-->
+      </div>
 
     </main>
 
@@ -171,7 +182,7 @@
       <h2 class="visually-hidden">Как к нам попасть. Адрес студии Нёрдс</h2>
       <img class="main-map" width="1440" height="415.99" src="img/nerds-map.jpg" alt="Студия Нёрдс находится по адресу ул. Большая Конюшенная, д.19/8, телефон +7 (812) 275-75-75">
       <iframe class="main-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328.6948254746785!2d30.32294031199366!3d59.93883776569838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+Rosja%2C+191186!5e0!3m2!1spl!2spl!4v1512822156008"
-      width="1440" height="415.99" frameborder="0" style="border:0" allowfullscreen></iframe>
+      width="1440" height="416" style="border:0" allowfullscreen></iframe>
 
       <div class="container">
         <div class="map-marker main-map">
@@ -185,6 +196,42 @@
         </div>
 
     </div>
+    </section>
+
+    <section class="write-us-form">
+      <div class="form-wrapper">
+        <div class="title-close">
+          <h2>Напишите нам</h2>
+          <button class="close-button" type="button">
+            <span class="line1"></span>
+            <span class="line2"></span>
+          </button>
+        </div>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="name-email-form">
+            <div>
+              <label for="your-name">Ваше имя:</label>
+              <input type="text" class="name" id="your-name" placeholder="Представтесь, пожалуйста">
+            </div>
+
+            <div>
+              <label for="your-mail">Ваш e-mail:</label>
+              <input type="email" class="mail" id="your-mail" placeholder="Для отправки ответа">
+            </div>
+        </div>
+
+        <div class="text-form">
+          <label for="your-message">Текст письма:</label>
+          <textarea name="comment" id="your-message" rows="6">В свободной форме</textarea>
+        </div>
+
+        <div>
+          <button class="button red-button" type="submit">Отправить</button>
+        </div>
+        </form>
+      </div>
+
     </section>
 
     <section class="write-us-form">
@@ -257,5 +304,5 @@
 
     <script src="js/popup.js"></script>
 
-  </body>
-</html>
+    </body>
+  </html>
