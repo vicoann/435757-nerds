@@ -1088,6 +1088,7 @@ opacity: 0.1;
  margin-top: 16px;
  margin-bottom: 32px;
  letter-spacing: -0.1px;
+ max-width: 250px;
 }
 
 .features {
