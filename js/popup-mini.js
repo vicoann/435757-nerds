@@ -1,0 +1,1 @@
+var link=document.querySelector(".write-us-button"),popup=document.querySelector(".write-us-form"),close=document.querySelector(".close-button");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("write-us-form-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("write-us-form-show")});
