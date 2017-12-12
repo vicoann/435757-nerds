@@ -1762,3 +1762,8 @@ img.main-map {
 
          align-items: flex-start;
 }
+
+iframe {
+  width: 100%;
+  height: 416px;
+}
