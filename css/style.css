@@ -1473,10 +1473,7 @@ img.main-map {
 }
 
 .pag {
- display: inline-block;
- vertical-align: top;
- -webkit-box-sizing: border-box;
-         box-sizing: border-box;
+  display: inline-flex;
  background-color: #eeeeee;
  border-radius: 3px;
  margin-right: 11px;
@@ -1486,17 +1483,7 @@ img.main-map {
  min-width: 50px;
  height: 50px;
 
- display: -webkit-box;
 
- display: -ms-flexbox;
-
- display: flex;
- -webkit-box-align: center;
-     -ms-flex-align: center;
-         align-items: center;
- -webkit-box-pack: center;
-     -ms-flex-pack: center;
-         justify-content: center;
 }
 
 .pag-next {
